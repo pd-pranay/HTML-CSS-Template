@@ -1,0 +1,204 @@
+body {
+  overflow-x: hidden; /*--right gutter fix--*/
+  padding: 0;
+  font-family: sans-serif;
+}
+/** {box-sizing: border-box}*/
+ /*start nav bar and caption*/
+.navbar{
+  text-transform: uppercase;
+  background-color: #231F20;
+}
+.nav-link{
+  color: white !important;
+}
+.navbar-brand img{
+  height: 1.7em;
+}
+
+.home-inner{
+  background: url('../img/landing.png');
+}
+.caption{
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+}
+.caption h3{
+  font-size: 2.4rem;
+  color: white;
+  padding: 0 .2rem 1.5rem .2rem;
+}
+.caption p{
+  color: #616C6F;
+}
+
+.btn{
+  border-width: medium;
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: .5rem 1.1rem;
+  font-size: .9rem;
+}
+.heading{
+  font-size: 1.9rem;
+  margin-bottom: 1.9rem;
+  text-transform: uppercase;
+}
+ /* end nav bar and caption */
+
+
+/* start category*/
+
+.photo{
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+   }
+   .min-pad{
+    padding: 5px 2px;
+   }
+  .category-type{
+    padding-bottom: 20px;
+  }
+
+  .overlay {
+  position: absolute; 
+  bottom: 3.5px; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 99%;
+  height:96.5%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.wrap-overlay .overlay {
+  opacity: 1;
+}
+
+/*end category*/
+
+#offers{
+  padding-top: 1.1rem;
+}
+.offers{
+  width: 100%;
+  max-width: 100%;
+}
+.no-padding .col-md-6{
+  padding: 0;
+}
+
+.feature{
+  max-width: 100%;
+}
+.no-padding .col-md-4{
+  padding: 0;
+}
+
+/* features*/
+.feature-padding{
+  padding: 0 7rem;
+}
+.feature-padding .col-md-4{
+  padding: 0;
+}
+
+/*message padding*/
+#message{
+  margin-top: 3rem 0;
+  color: white;
+  background-image: url('img/landing.png');
+}
+.message{
+  background-color: #262626;
+}
+.message h6{
+  padding: .5rem;
+  overflow: hidden;
+  font-size: 1.3rem;
+  text-overflow: ellipsis;
+}
+.jumbotron{
+  border-radius: 0 !important;
+}
+
+/*end message*/
+
+.contact-padding{
+  /*background-color: #262626;*/
+}
+
+
+
+.map{
+  padding: 0;
+}
+
+iframe{
+  width: 100%;
+  max-height: 100;
+  height: 15rem;
+}
+
+.footer{
+  padding: 1.7rem;
+  background-color: #262626;
+  color: white;
+}
+
+.float-right a{
+  padding: 0 .5rem;
+}
+
+
+
+
+/*--- iOS Landing Page Fix --*/
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  background: #E9ECEF;
+  z-index: -1;
+}
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-inner {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+
+
+@media screen and (max-width: 450px) {
+  .feature-padding{
+  padding: 0 5rem;
+}
+}
+
+

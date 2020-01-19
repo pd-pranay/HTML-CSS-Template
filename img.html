@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+   .photo{
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+   }
+   .min-pad{
+    padding: 5px 2px;
+   }
+
+  .overlay {
+  position: absolute; 
+  bottom: 3.5px; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 99%;
+  height:96.5%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.wrap-overlay .overlay {
+  opacity: 1;
+}
+
+   @media screen and (min-width: 360px) {
+    .category-margin{
+      padding: 0 5px;
+    }
+  }
+.bg{
+  background: url('img/landing.png') !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+.contact-form{
+background:rgb(0, 0, 0, .6);
+color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <h1>Basic Grid Structure</h1>
+  <p>Resize the browser window to see the effect.</p>
+  <p>The first, second and third row will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  </div>
+  <div class="container">
+  <div class="row category-margin wrap-overlay">
+
+    <div class="col-md-3 col-6 min-pad">
+      <img class="photo" src="img/1.png">
+      <div class="overlay">My Name is John</div>
+    </div>
+    <div class="col-md-6 col-6 min-pad">
+      <img class="photo" src="img/3.png">
+      <div class="overlay">My Name is John</div>
+    </div>
+    <div class="col-md-3 col-6 min-pad">
+      <img class="photo" src="img/2.png">
+      <div class="overlay">My Name is John</div>
+    </div>
+
+    <div class="col-md-2 col-6 min-pad">
+      <img class="photo" src="img/1.png">
+    </div>
+    <div class="col-md-4 col-6 min-pad">
+      <img class="photo" src="img/3.png">
+    </div>
+    <div class="col-md-6 col-6 min-pad">
+      <img class="photo" src="img/2.png">
+    </div>
+
+    <div class="col-md-4 col-6 min-pad">
+      <img class="photo" src="img/3.png">
+    </div>
+    <div class="col-md-8 col-6 min-pad">
+      <img class="photo" src="img/2.png">
+    </div>
+
+  </div>
+
+  </div>
+
+<!-- <div class="bg">
+<div class="container-fluid contact-form">
+  <h1>Contact form</h1>
+  <hr>
+  <div class="row">
+    <div class="col-md-6">
+      <address>213 jdve gude hdiq</address>
+      <p>email hsilgcj#tdugsukg</p>
+    </div>
+    <div class="col-md-6">
+      <form action="/action_page.php">
+            <div class="form-group">
+              <input type="name" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="2" placeholder="Address" id="address"></textarea>
+              </div>
+            <div class="form-group">
+              <input type="phone" class="form-control" id="phone" placeholder="Phone">
+            </div>
+          </form>
+    </div>
+  </div>
+</div>
+</div> -->
+
+  <div class="bg" background="img/landing.png">
+  <div class="container-fluid contact-form">
+    <h3 class="heading text-center">Contact Us</h3>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <address>
+          <a href="#">
+                <i class="fas fa-map-marker-alt"></i>
+              </a>
+          Map-marker icon as a link:
+        </address>
+        <p>
+          <a href="#">
+              <i class="fas fa-globe-asia"></i>
+              </a>
+          Map-marker icon as a link:
+          </p>
+          <p>
+          <a href="#">
+                <i class="fas fa-phone"></i>
+              </a>
+          Map-marker icon as a link:
+          </p>
+      </div>
+      <div class="col-md-4">
+        <form>
+            <div class="form-group">
+              <input type="name" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="2" placeholder="Address" id="address"></textarea>
+              </div>
+            <div class="form-group">
+              <input type="phone" class="form-control" id="phone" placeholder="Phone">
+            </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+            <textarea class="form-control" rows="6" placeholder="Requirement" id="comment"></textarea>
+            <br>
+            <button class="btn btn-primary float-right">Submit</button>
+            <br><br>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<br><br>
+</body>
+</html>
